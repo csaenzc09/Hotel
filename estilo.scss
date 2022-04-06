@@ -18,6 +18,11 @@ html{
 }
 
 
+::selection{
+    background-color: transparent;
+    color: $colorPrimario;
+}
+
 body::-webkit-scrollbar{
     width: 10px;
 }
@@ -91,7 +96,6 @@ header,section{
     }
 
         
-
     .bars{
         color: $colorBlanco;
         font-size: 3rem;
@@ -130,7 +134,6 @@ header,section{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    backdrop-filter: blur(2px);
 
     .principal{
         display: flex;
@@ -138,7 +141,6 @@ header,section{
         justify-content: center;
         align-items: center;
         min-height: 80vh;
-        
     
         h1{
             font-size: 7rem;
@@ -164,9 +166,6 @@ header,section{
     }
   
 }
-
-
-
 
 #aboutUs{
 
@@ -208,6 +207,8 @@ header,section{
         .box_content{
             flex: 1 1 350px;
             padding: 40px;
+            max-width: 500px;
+
 
             h3{
                 font-size: 2rem;
@@ -234,8 +235,6 @@ header,section{
     min-height: 100vh;
     background-color: teal;
 }
-
-
 
 
 .subir{
